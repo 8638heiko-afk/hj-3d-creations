@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HJ 3D Creations – individuelle 3D-Drucke, kreative Modelle und Sonderanfertigungen.">
+  <title>HJ 3D Creations | 3D-Druck & individuelle Kreationen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Kreative Ideen · Präzise gedruckt · Individuell für dich</div>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="HJ 3D Creations Startseite">
+      <span class="brand-mark">HJ<span>3D</span></span>
+      <span class="brand-name">HJ 3D <b>CREATIONS</b><small>PRINTED WITH PASSION</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#shop">Shop</a><a href="#ueber">Über mich</a><a href="#sonder">Sonderanfertigung</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Warenkorb öffnen">Warenkorb <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DEIN 3D-DRUCK ATELIER</p>
+        <h1>Aus Ideen werden<br><em>echte Dinge.</em></h1>
+        <p class="hero-lead">Willkommen bei HJ 3D Creations. Entdecke besondere 3D-Drucke, praktische Helfer und individuelle Kreationen – mit Liebe zum Detail gefertigt.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#shop">Modelle entdecken <span>↗</span></a><a class="text-link" href="#sonder">Eigene Idee anfragen →</a></div>
+        <div class="hero-proof"><div class="proof-icon">✦</div><div><b>Individuell statt von der Stange</b><small>Viele Modelle und Farben auf Anfrage möglich</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Dekorative 3D-Formen">
+        <div class="art-glow"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="wire-cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="art-label"><span>HJ / 3D</span><b>IDEAS<br>MADE REAL</b></div>
+        <div class="art-caption">DESIGNED TO INSPIRE<br>MADE TO LAST</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>3D PRINTING</span><b>✳</b><span>DESIGN</span><b>✳</b><span>INDIVIDUAL</span><b>✳</b><span>CREATIVITY</span><b>✳</b><span>3D PRINTING</span></section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">DIE KLEINE AUSWAHL</p><h2>Entdecke meine <em>Modelle.</em></h2></div>
+        <p>Hier findest du eine Auswahl meiner Arbeiten. Du kannst mehrere Produkte in den Warenkorb legen und anschließend eine Bestellanfrage senden.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="Alle">Alle Modelle</button>
+        <button class="filter" data-filter="Dekoration">Dekoration</button>
+        <button class="filter" data-filter="Alltag">Alltagshelfer</button>
+        <button class="filter" data-filter="Figuren">Figuren</button>
+        <button class="filter" data-filter="Sonstiges">Sonstiges</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="demo-note">Die angezeigten Beispielprodukte dienen als Platzhalter. Ersetze sie durch Fotos, Beschreibungen und Preise deiner eigenen Drucke.</p>
+    </section>
+
+    <section class="feature-band" id="ueber">
+      <div class="feature-symbol">HJ<span>3D</span></div>
+      <div><p class="eyebrow">HINTER HJ 3D CREATIONS</p><h2>Mit Leidenschaft<br>Schicht für Schicht.</h2></div>
+      <p>Ich bin Heiko und teile hier meine Begeisterung für den 3D-Druck. Von dekorativen Hinguckern bis zu praktischen Alltagslösungen – jedes Modell zeigt, was mit Kreativität und einem 3D-Drucker möglich ist.</p>
+    </section>
+
+    <section class="section custom-section" id="sonder">
+      <div class="custom-card">
+        <div class="custom-visual"><div class="custom-ring"></div><div class="custom-cube">+</div><span>YOUR<br>IDEA</span></div>
+        <div class="custom-copy"><p class="eyebrow">DU HAST EINE IDEE?</p><h2>Dein Wunsch.<br><em>Mein 3D-Druck.</em></h2><p>Du suchst eine andere Größe, eine bestimmte Farbe oder hast eine eigene Vorstellung? Schreib mir – gemeinsam schauen wir, was möglich ist.</p><a class="button button-light" href="#kontakt">Sonderanfertigung anfragen <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt">
+      <div><p class="eyebrow">LASS UNS SPRECHEN</p><h2>Fragen oder<br><em>Wünsche?</em></h2><p>Nutze das Formular für allgemeine Fragen oder individuelle Druckideen. Für Bestellungen verwende bitte den Warenkorb.</p></div>
+      <form class="contact-form" id="contact-form">
+        <label>Dein Name<input name="name" required placeholder="Vor- und Nachname"></label>
+        <label>Deine E-Mail<input name="email" type="email" required placeholder="name@beispiel.de"></label>
+        <label>Deine Nachricht<textarea name="message" rows="4" required placeholder="Was kann ich für dich drucken?"></textarea></label>
+        <button class="button button-primary" type="submit">E-Mail vorbereiten <span>↗</span></button>
+        <small>Das Formular öffnet dein E-Mail-Programm. Es werden keine Daten auf dieser Website gespeichert.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#start"><span class="brand-mark">HJ<span>3D</span></span><span class="brand-name">HJ 3D <b>CREATIONS</b><small>PRINTED WITH PASSION</small></span></a>
+    <p>© <span id="year"></span> HJ 3D Creations · Mit Kreativität gedruckt.</p>
+    <div><a href="legal.html">Impressum</a><a href="privacy.html">Datenschutz</a></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Warenkorb" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">DEINE AUSWAHL</p><h3>Warenkorb</h3></div><button class="close-cart" id="close-cart" aria-label="Schließen">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Zwischensumme (unverbindlich)</span><b id="cart-total">0,00 €</b></div><p>Versandkosten und endgültiger Preis werden nach deiner Anfrage abgestimmt. Noch keine Onlinezahlung.</p><button class="button button-primary full" id="checkout-button">Bestellanfrage senden <span>↗</span></button><button class="continue-shopping" id="continue-shopping">Weiter einkaufen</button></div>
+  </aside>
+
+  <dialog id="checkout-dialog" class="checkout-dialog">
+    <form id="checkout-form" method="dialog">
+      <button class="dialog-close" type="button" id="close-checkout">×</button>
+      <p class="eyebrow">FAST GESCHAFFT</p><h2>Deine <em>Bestellanfrage.</em></h2>
+      <p class="dialog-intro">Trage deine Kontaktdaten ein. Dein E-Mail-Programm öffnet sich mit deiner Artikelliste. Die Bestellung ist erst nach persönlicher Bestätigung verbindlich.</p>
+      <label>Name<input name="name" required placeholder="Vor- und Nachname"></label>
+      <label>E-Mail<input name="email" type="email" required placeholder="name@beispiel.de"></label>
+      <label>Lieferort / Hinweise<textarea name="notes" rows="3" placeholder="PLZ, Ort, Farbwunsch oder weitere Angaben"></textarea></label>
+      <button class="button button-primary full" type="submit">Anfrage per E-Mail vorbereiten ↗</button>
+      <small>Onlinezahlung ist derzeit nicht aktiviert.</small>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
